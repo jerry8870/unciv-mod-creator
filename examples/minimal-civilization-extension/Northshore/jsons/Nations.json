@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Northshore",
+    "leaderName": "Mira Vale",
+    "outerColor": [34, 103, 143],
+    "innerColor": [244, 225, 178],
+    "cities": [
+      "Northport",
+      "Saltmere",
+      "Rivercross",
+      "Pinewatch",
+      "Stonebay",
+      "Highbank"
+    ]
+  }
+]

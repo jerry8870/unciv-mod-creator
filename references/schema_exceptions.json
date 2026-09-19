@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "exceptions": [
+    {
+      "id": "unciv-4.22.0-personality-denounce-willingness",
+      "game_version": "4.22.0",
+      "ruleset": "Civ V - Gods & Kings",
+      "file": "Personalities.json",
+      "validator": "additionalProperties",
+      "unexpected_property": "denounceWillingness",
+      "reason": "The official 4.22.0 base ruleset uses denounceWillingness in every personality, while the official same-tag Personalities Schema rejects it as an additional property.",
+      "reviewed_at": "2026-09-19"
+    }
+  ]
+}

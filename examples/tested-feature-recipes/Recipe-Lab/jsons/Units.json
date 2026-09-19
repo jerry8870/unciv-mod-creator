@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Recipe Guard",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 8,
+    "cost": 40,
+    "requiredTech": "Agriculture",
+    "obsoleteTech": "Metal Casting",
+    "upgradesTo": "Swordsman",
+    "uniqueTo": "Recipe Lab",
+    "replaces": "Warrior",
+    "uniques": [
+      "[+20]% Strength"
+    ]
+  }
+]

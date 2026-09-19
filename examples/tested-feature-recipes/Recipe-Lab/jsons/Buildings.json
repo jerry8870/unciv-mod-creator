@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Recipe Hall",
+    "culture": 3,
+    "cost": 40,
+    "maintenance": 1,
+    "uniqueTo": "Recipe Lab",
+    "replaces": "Monument"
+  }
+]

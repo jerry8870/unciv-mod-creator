@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Recipe Lab",
+    "leaderName": "Aster Vale",
+    "outerColor": [28, 99, 133],
+    "innerColor": [242, 190, 83],
+    "cities": [
+      "Beacon Bay",
+      "Copper Haven",
+      "Glass Harbor",
+      "Northlight"
+    ],
+    "uniques": [
+      "[+1 Gold] from each Trade Route"
+    ]
+  }
+]

@@ -1,0 +1,255 @@
+{
+  "schema_version": 2,
+  "scope": "Exact examples and parameterized Unique templates reviewed for Unciv 4.22.0. Template matches confirm shape and applicability but do not inherit exact-example runtime evidence.",
+  "target_game": {
+    "version": "4.22.0",
+    "build": 1297
+  },
+  "reviewed_at": "2026-09-19",
+  "evidence_levels": {
+    "documented": "Found in source-tagged official documentation; no game result recorded.",
+    "ruleset-validator-passed": "Accepted by the in-game Ruleset Validator for the recorded build.",
+    "gameplay-smoke-tested": "Accepted by the validator and observed in a bounded game smoke test for the recorded build."
+  },
+  "mechanics": [
+    {
+      "id": "global-city-yields",
+      "intent": "Add yields in every city",
+      "exact_unique": "[+1 Gold, +2 Production] [in all cities]",
+      "applicable_to": [
+        "Global",
+        "FollowerBelief"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "[{stats}] [{city_filter}]",
+      "parameter_kinds": {
+        "stats": "stats",
+        "city_filter": "text"
+      }
+    },
+    {
+      "id": "global-trade-route-yield",
+      "intent": "Reward trade routes",
+      "exact_unique": "[+1 Gold] from each Trade Route",
+      "applicable_to": [
+        "Global",
+        "FollowerBelief"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "ruleset-validator-passed",
+      "test_evidence": [
+        {
+          "date": "2026-09-19",
+          "game_version": "4.22.0",
+          "build": 1297,
+          "base_ruleset": "Civ V - Gods & Kings",
+          "mod": "examples/tested-feature-recipes/Recipe-Lab",
+          "result": "In-game Check mod reported 'No problems found' and a new game loaded as Recipe Lab. The trade-route yield effect was not exercised.",
+          "verification_record": "examples/tested-feature-recipes/verification.json",
+          "check_id": "trade-route-yield"
+        }
+      ],
+      "template_unique": "[{stats}] from each Trade Route",
+      "parameter_kinds": {
+        "stats": "stats"
+      }
+    },
+    {
+      "id": "global-population-yield",
+      "intent": "Scale yields with population",
+      "exact_unique": "[+1 Gold, +2 Production] per [3] population [in all cities]",
+      "applicable_to": [
+        "Global",
+        "FollowerBelief"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "[{stats}] per [{population}] population [{city_filter}]",
+      "parameter_kinds": {
+        "stats": "stats",
+        "population": "number",
+        "city_filter": "text"
+      }
+    },
+    {
+      "id": "global-tile-yield",
+      "intent": "Reward a tile or improvement type",
+      "exact_unique": "[+1 Gold, +2 Production] from [Farm] tiles [in all cities]",
+      "applicable_to": [
+        "Global",
+        "FollowerBelief"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "[{stats}] from [{tile_filter}] tiles [{city_filter}]",
+      "parameter_kinds": {
+        "stats": "stats",
+        "tile_filter": "text",
+        "city_filter": "text"
+      }
+    },
+    {
+      "id": "global-unit-production",
+      "intent": "Improve production of a unit class",
+      "exact_unique": "[+20]% Production when constructing [Melee] units [in all cities]",
+      "applicable_to": [
+        "Global",
+        "FollowerBelief"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "[{percent}]% Production when constructing [{unit_filter}] units [{city_filter}]",
+      "parameter_kinds": {
+        "percent": "signed-number",
+        "unit_filter": "text",
+        "city_filter": "text"
+      }
+    },
+    {
+      "id": "global-provide-resource",
+      "intent": "Provide a strategic resource",
+      "exact_unique": "Provides [3] [Iron]",
+      "applicable_to": [
+        "Global",
+        "FollowerBelief",
+        "Improvement"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "Provides [{amount}] [{resource}]",
+      "parameter_kinds": {
+        "amount": "number",
+        "resource": "text"
+      },
+      "parameter_references": {
+        "resource": "TileResources"
+      }
+    },
+    {
+      "id": "unit-strength-percent",
+      "intent": "Increase combat strength",
+      "exact_unique": "[+20]% Strength",
+      "applicable_to": [
+        "Unit",
+        "Global"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "ruleset-validator-passed",
+      "test_evidence": [
+        {
+          "date": "2026-09-19",
+          "game_version": "4.22.0",
+          "build": 1297,
+          "base_ruleset": "Civ V - Gods & Kings",
+          "mod": "examples/tested-feature-recipes/Recipe-Lab",
+          "result": "In-game Check mod reported 'No problems found', and the live Recipe Guard production detail displayed '+20% Strength'. Applied combat damage math was not exercised.",
+          "verification_record": "examples/tested-feature-recipes/verification.json",
+          "check_id": "combat-modifier-loaded"
+        }
+      ],
+      "template_unique": "[{percent}]% Strength",
+      "parameter_kinds": {
+        "percent": "signed-number"
+      }
+    },
+    {
+      "id": "unit-movement",
+      "intent": "Set unit movement",
+      "exact_unique": "[3] Movement",
+      "applicable_to": [
+        "Unit",
+        "Global"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "[{movement}] Movement",
+      "parameter_kinds": {
+        "movement": "number"
+      }
+    },
+    {
+      "id": "unit-fresh-water-movement",
+      "intent": "Move faster along fresh water",
+      "exact_unique": "Double movement in [Fresh Water]",
+      "applicable_to": [
+        "Unit"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "Double movement in [{terrain_filter}]",
+      "parameter_kinds": {
+        "terrain_filter": "text"
+      }
+    },
+    {
+      "id": "nation-start-bias",
+      "intent": "Prefer a fresh-water start",
+      "exact_unique": "Start bias [Fresh Water]",
+      "applicable_to": [
+        "Nation",
+        "CityState"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "Start bias [{terrain_filter}]",
+      "parameter_kinds": {
+        "terrain_filter": "text"
+      }
+    },
+    {
+      "id": "trigger-reveal-map",
+      "intent": "Reveal the map as a one-time effect",
+      "exact_unique": "Reveals the entire map",
+      "applicable_to": [
+        "Technology",
+        "Policy",
+        "Building"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": []
+    },
+    {
+      "id": "trigger-discover-tech",
+      "intent": "Grant a technology as a one-time effect",
+      "exact_unique": "Discover [Agriculture]",
+      "applicable_to": [
+        "Technology",
+        "Policy",
+        "Building"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "Discover [{technology}]",
+      "parameter_kinds": {
+        "technology": "text"
+      },
+      "parameter_references": {
+        "technology": "Techs"
+      }
+    }
+  ],
+  "template_match_policy": "Only an exact_unique match reports evidence_status. A template_unique match reports untested parameter values until a separate verification record exists."
+}

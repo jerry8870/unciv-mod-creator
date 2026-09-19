@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Tideward",
+    "leaderName": "Nerissa",
+    "outerColor": [24, 80, 105],
+    "innerColor": [235, 198, 128],
+    "uniqueName": "Harbor League",
+    "uniques": [
+      "[+1 Gold] from each Trade Route"
+    ],
+    "preferredVictoryType": "Diplomatic",
+    "introduction": "Tideward's harbor cities prosper through long-distance trade and a watchful coastal fleet.",
+    "neutralHello": "Welcome to Tideward. May our markets stay open.",
+    "tradeRequest": "Let us make a fair exchange.",
+    "declaringWar": "Our ships are already at your coast.",
+    "cities": [
+      "Saltport",
+      "Pearl Haven",
+      "Windharbor",
+      "Reedbank",
+      "Far Shoal",
+      "Brightwater"
+    ],
+    "spyNames": [
+      "Lio",
+      "Maren",
+      "Sefa"
+    ]
+  }
+]

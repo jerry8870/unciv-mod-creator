@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "ruleset": "Civ V - Gods & Kings",
+  "game_version": "4.22.0",
+  "game_build": 1297,
+  "source_commit": "518daddf0a06b273f16b481a0464626889307df7",
+  "reviewed_at": "2026-09-19",
+  "sources": {
+    "android/assets/jsons/Civ V - Gods & Kings/Beliefs.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Beliefs.json",
+      "sha256": "1041512886da13be3da4fa84422af47ab3aad36b549fb10e65f6e259f8837f34"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Buildings.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Buildings.json",
+      "sha256": "2e01b25ba19292cf4d42e364031e541f7e4c8dd725ad1a903ec7abfd64b7bc6d"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/CityStateTypes.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/CityStateTypes.json",
+      "sha256": "bb69d67b0b1efad907234905f1cc5a14afcf338dc993980d91b3475e5b5f908b"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Difficulties.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Difficulties.json",
+      "sha256": "0dc02b92db372561441a6754cb2fcbd2fd60849dccc1d31f4975ae91ebc31167"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Eras.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Eras.json",
+      "sha256": "fbdc455bfe8f7f4b8678a94d8daec092cdbb534468e91ac99add53f1b395d2f2"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Events.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Events.json",
+      "sha256": "acc8e12f7bfee29ec01f212675c2db27ebac7f6723031d075e0d7ac1aea69b87"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/GlobalUniques.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/GlobalUniques.json",
+      "sha256": "2512c8a18ec8c1214ce222c603fc38718371f7956982eede097c6f9f11717e99"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/ModOptions.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/ModOptions.json",
+      "sha256": "eb7485303a4b9ebcb2a6a8f077a0fcb9331043051e8f0fc8d12e00c307818989"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Nations.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Nations.json",
+      "sha256": "5f1e7f2b19bb070b30c2981da2780ac4e8bccaaa8fab83de9ac43648b5d24010"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Personalities.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Personalities.json",
+      "sha256": "af210120b5ddd42f881eaceb7815600b5ce35b16e6db3d813396bd20f190c5d7"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Policies.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Policies.json",
+      "sha256": "f724b15cca730295ad3c87f0ca8cedabee90aaae3262680595d6af8a47f57455"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Quests.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Quests.json",
+      "sha256": "088d64b392f3aef6abb1d7e66f284b96e8d58e08a2bb076a1e260331e05f422a"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Religions.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Religions.json",
+      "sha256": "d57f06a81da239ffd2944950e92b61abc30313646938505533eb50efe121a1a8"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Ruins.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Ruins.json",
+      "sha256": "5bc6f97a83a701931ef283f436b4b99563ea1d20bd353d35fd485b1cdd5c5b0d"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Specialists.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Specialists.json",
+      "sha256": "741b8bfca3c42837bee68f5d5a9af6a82ed771049243b386884f82af5cfd5d61"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Speeds.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Speeds.json",
+      "sha256": "49239006d57bf1866df07aa543feb4a6972dedcafeacfe67575eee76d978b031"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Techs.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Techs.json",
+      "sha256": "415cbf1c42de6396238330e4e185276e66879d28e8abdc9bee1ce03788aaa987"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Terrains.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Terrains.json",
+      "sha256": "676b546845a072e615669a0fba7404d02c912b3dd0f45dd2a7822c1aadfef836"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/TileImprovements.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/TileImprovements.json",
+      "sha256": "ab7daa7c65ec5c7396d829ba5c3db68536198a088935fbf3ad2d4f9462be1242"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/TileResources.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/TileResources.json",
+      "sha256": "44f379560eab1122906d806aa9d1dd4a43f9b8b31af0bdeca7cb9324cbec5dce"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/UnitNameGroups.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/UnitNameGroups.json",
+      "sha256": "eec585e3feeec114bc360d91840c48f7eb7f56fa189fe864fdeafbd84f5d5930"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/UnitPromotions.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/UnitPromotions.json",
+      "sha256": "2c662d46106d095f05ab64f59b01d8aa91809c1b4fa3612f56cb4e0b5589a2f6"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/UnitTypes.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/UnitTypes.json",
+      "sha256": "765e74e9603145b9673cee7662175fbae20ec82caab9c50c37b070ce0bf4d7a9"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/Units.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/Units.json",
+      "sha256": "f2786a1da6d444789f7c4d1c391294f94e4a59f2024524ccd3b8f1477d4b0ce0"
+    },
+    "android/assets/jsons/Civ V - Gods & Kings/VictoryTypes.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Gods%20%26%20Kings/VictoryTypes.json",
+      "sha256": "259a700c2b3cdb54c47a1f6394f8253762be0fab5cc1a4861ca88e00cf6f3c5b"
+    },
+    "android/assets/jsons/translations/Simplified_Chinese.properties": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/translations/Simplified_Chinese.properties",
+      "sha256": "a432a5c361cbdde1e7c93927e8daaea7684ce21464bbb32de3be76a64bf38e59"
+    }
+  },
+  "files": {
+    "rules.json": "e8835f15c4d96aa0a9ddedac30d1b5a71c0df90c7d2acd200ae37e2c5424da06",
+    "zh.json": "f1dd1a6ead8b5a72fd87d4cabd90ad0891915f808c5866fef1bd350f20b08951"
+  }
+}

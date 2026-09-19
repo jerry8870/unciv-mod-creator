@@ -1,0 +1,24 @@
+---
+name: unciv-mod-creator
+description: Design, create, audit, validate, package, install, and test data-driven Unciv Mods using bundled references and official Mod documentation. Supports starter generation, rules and translation checks, image-atlas validation and packing, deterministic ZIP output, optional iOS receiver upload, and evidence-bound runtime verification.
+---
+
+# Unciv Mod Creator
+
+Create player-installable Unciv Mods without requiring a game source checkout.
+
+## Workflow
+
+1. Confirm the Mod type. Let `scripts/unciv_mod.py check` infer the base ruleset only when one bundled ruleset uniquely satisfies the Mod's semantic references; if candidates remain, ask for `--base-ruleset` instead of guessing. Resolve bundled validation inputs through `references/versions/index.json`; report an unsupported ruleset instead of silently substituting another one. The reference bundle records its own source version for provenance, but users do not select a game version. Prefer an extension Mod when it can express the request.
+2. Use [knowledge-index.md](references/knowledge-index.md) to select relevant references. For requests that add gameplay behavior, follow [feature-design-workflow.md](references/feature-design-workflow.md), use [mechanics-index.md](references/mechanics-index.md) for discovery, and consult the versioned `mechanics_registry.json`. An exact example may carry recorded test evidence; a parameterized template match confirms only the documented mechanic shape and applicability. For a playable civilization with unique content, also follow [civilization-extension-workflow.md](references/civilization-extension-workflow.md).
+3. For a new Mod folder, create a matching starter with `python3 scripts/unciv_mod.py create --type TYPE --mod-name "NAME" --brief "SHORT BRIEF" --base-ruleset "RULESET" --output-dir PARENT`, using `civilization-extension`, `unit-building`, or `map-only` as the type. Complete the generated `DESIGN.md` feature mapping before filling sample values or empty arrays; the scaffold does not generate gameplay behavior.
+4. Make only the requested changes. Unciv data cannot add engine code or new unique implementations; explain a data-only approximation when needed.
+5. Run `python3 scripts/unciv_mod.py check MOD` to produce one strict preflight report covering the selected official Schemas, reviewed Schema exceptions, complete base references, nested cross-file references, registered mechanic parameters, translations, assets, atlases, and ZIP integrity using deterministic packaging. Prefer JSON when another tool will consume the findings; diagnostic codes are stable and may include JSON Pointer, value, and correction guidance. Run `unciv_mod.py audit` after refreshing reference bundles. For images, follow [mod-authoring-reference.md](references/mod-authoring-reference.md): validate source images, pack atlases, then run full preflight. Static checks do not prove unique implementations, balance, or in-game behavior. Use [validation_coverage.json](references/validation_coverage.json) to inspect the declared validation surface and its integration scenarios.
+6. For a requested deliverable ZIP, run `unciv_mod.py pack MOD --output ARCHIVE`; use `unciv_mod.py upload` with the receiver URL and access code only when upload is requested. For an iOS install or test, follow [ios-transfer.md](references/ios-transfer.md). Distinguish a successful upload from an in-game test; smoke-test in a new game with the Mod enabled. Use a deterministic fixture when a mechanic otherwise depends on long setup or random spawns. Use `unciv_mod.py evidence init`, `add-artifact`, `add-check`, and `finalize` to record passed, failed, and unexercised checks in `verification.json`, bind the preflight, installed ZIP, and screenshots by SHA-256, and generate Markdown. A target version is not required; an observed build may be recorded as runtime context.
+7. Report changed files, checks and results, plus behavior or compatibility that remains unverified.
+
+## Three layers
+
+1. **Instructions:** this file routes the workflow.
+2. **Knowledge:** `references/` contains authoring guidance, official documentation links, examples, catalog metadata, and baseline data. Start at [knowledge-index.md](references/knowledge-index.md).
+3. **Automation:** `scripts/unciv_mod.py` is the unified entry point and the focused scripts remain reusable modules. `tests/` covers starter generation, conservative ruleset detection, official Schema validation and exception audits, complete baseline integrity, structured diagnostics, preflight reporting, semantic references, parameterized mechanics, image/atlas checks, evidence hashes, reproducible packaging, and upload behavior. `references/validation_coverage.json` declares the validation surface and integration scenarios. In-game Ruleset Validator and gameplay checks remain necessary for engine behavior.

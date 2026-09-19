@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "current_reference_version": "4.22.0",
+  "versions": {
+    "4.22.0": {
+      "game_build": 1297,
+      "default_ruleset": "Civ V - Gods & Kings",
+      "schema_dir": "references/schemas/unciv-4.22.0",
+      "mechanics_registry": "references/mechanics_registry.json",
+      "schema_exceptions": "references/schema_exceptions.json",
+      "rulesets": {
+        "Civ V - Gods & Kings": {
+          "rules": "references/snapshots/gk-baseline/rules.json",
+          "manifest": "references/snapshots/gk-baseline/manifest.json"
+        },
+        "Civ V - Vanilla": {
+          "rules": "references/snapshots/vanilla-baseline/rules.json",
+          "manifest": "references/snapshots/vanilla-baseline/manifest.json"
+        }
+      }
+    }
+  }
+}

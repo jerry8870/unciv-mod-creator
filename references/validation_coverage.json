@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "purpose": "Machine-readable declaration of the static and runtime validation surface.",
+  "official_schema_files": [
+    "Beliefs", "Buildings", "CityStateTypes", "Difficulties", "Eras", "Events",
+    "GlobalUniques", "ModOptions", "Nations", "Personalities", "Policies", "Quests",
+    "Religions", "Ruins", "Specialists", "Speeds", "Techs", "Terrains",
+    "TileImprovements", "TileResources", "TileSetConfig", "Tutorials", "UnitNameGroups",
+    "UnitPromotions", "UnitTypes", "Units", "VictoryTypes"
+  ],
+  "semantic_reference_fields": {
+    "Buildings": ["requiredBuilding", "requiredNearbyImprovedResources", "requiredResource", "requiredTech", "replaces", "specialistSlots", "uniqueTo"],
+    "Difficulties": ["aiFreeTechs", "aiCityStateBonusStartingUnits", "aiMajorCivBonusStartingUnits", "playerBonusStartingUnits"],
+    "Eras": ["settlerBuildings", "startingMilitaryUnit", "startingObsoleteWonders", "startingSettlerUnit", "startingWorkerUnit"],
+    "Nations": ["cityStateType", "favoredReligion", "personality"],
+    "Policies": ["era", "policies.requires"],
+    "Quests": ["weightForCityStateType"],
+    "Ruins": ["excludedDifficulties"],
+    "Techs": ["era", "techs.prerequisites"],
+    "TileImprovements": ["replaces", "techRequired", "terrainsCanBeBuiltOn", "uniqueTo"],
+    "TileResources": ["improvedBy", "improvement", "revealedBy", "terrainsCanBeFoundOn"],
+    "UnitPromotions": ["prerequisites", "unitTypes"],
+    "Units": ["obsoleteTech", "promotions", "replaces", "requiredResource", "requiredTech", "uniqueTo", "unitType", "upgradesTo"],
+    "VictoryTypes": ["requiredSpaceshipParts"]
+  },
+  "additional_static_checks": [
+    "duplicate JSON keys and duplicate object names",
+    "registered Unique shape, owner applicability, and parameter references",
+    "translation format, duplicate keys, UTF-8, and placeholder preservation",
+    "image paths, case, PNG headers, common icon dimensions, and symlinks",
+    "atlas control files, pages, regions, and stale packed output",
+    "deterministic ZIP layout, integrity, size, and platform metadata exclusion"
+  ],
+  "diagnostic_contract": {
+    "required_fields": ["severity", "code", "path", "message"],
+    "optional_fields": ["json_pointer", "value", "suggestion"],
+    "code_families": ["SCHEMA", "JSON", "REFERENCE", "UNIQUE", "TRANSLATION", "ASSET", "PACKAGE", "RULE"]
+  },
+  "integration_scenarios": [
+    {"id": "civilization-extension", "source": "examples/minimal-civilization-extension", "coverage": ["rules", "schema", "package", "simulator"]},
+    {"id": "rich-extension", "source": "examples/rich-civilization-extension", "coverage": ["rules", "references", "mechanics"]},
+    {"id": "feature-recipes", "source": "examples/tested-feature-recipes", "coverage": ["strict-preflight", "package", "runtime-evidence"]},
+    {"id": "map-only", "source": "tests/test_mod_starter.py", "coverage": ["starter", "empty-map-boundary"]},
+    {"id": "visual-mod", "source": "tests/test_mod_assets.py", "coverage": ["source-images", "atlas", "control-file"]},
+    {"id": "vanilla-ruleset", "source": "tests/test_mod_rules.py", "coverage": ["ruleset-selection", "schema-exception-scope"]}
+  ],
+  "runtime_boundary": [
+    "Static checks do not prove gameplay behavior, balance, or compatibility with an untested build.",
+    "Runtime claims require recorded observations and SHA-256-bound artifacts.",
+    "A successful package upload proves transfer only."
+  ]
+}

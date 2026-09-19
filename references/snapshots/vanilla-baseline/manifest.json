@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "ruleset": "Civ V - Vanilla",
+  "game_version": "4.22.0",
+  "game_build": 1297,
+  "source_commit": "518daddf0a06b273f16b481a0464626889307df7",
+  "reviewed_at": "2026-09-19",
+  "sources": {
+    "android/assets/jsons/Civ V - Vanilla/Buildings.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Buildings.json",
+      "sha256": "013a206e662e1da2f9dc570dcb9de0b2f21748ecc65228a6d4664bdff805163d"
+    },
+    "android/assets/jsons/Civ V - Vanilla/CityStateTypes.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/CityStateTypes.json",
+      "sha256": "9987854f03afa9ecee576e87b1b910a85eb4128327354888b7bbb584ab986ed4"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Difficulties.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Difficulties.json",
+      "sha256": "08f540f956a0ca795ca82409f72120311a7c41529eb053aeb90883d3cf5b4ff1"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Eras.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Eras.json",
+      "sha256": "0cb7174a8be1eded1f90a0b1c437edf04448c7913a2175c9c65a265e4efc0c7d"
+    },
+    "android/assets/jsons/Civ V - Vanilla/GlobalUniques.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/GlobalUniques.json",
+      "sha256": "2bee516f0866b2a0672b8167dba10e05582cb354ffb422077e72197eff31e745"
+    },
+    "android/assets/jsons/Civ V - Vanilla/ModOptions.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/ModOptions.json",
+      "sha256": "97649557b9ee420060febe3b61d5faf91a5c2fbe9f62a34dc0fcc86e771729ba"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Nations.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Nations.json",
+      "sha256": "f6920dc32d96cb6c09680de1c7f7cba339ca738d2ef13e20555e3e36cff2eccf"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Policies.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Policies.json",
+      "sha256": "e4e642fdd914cffd9732c8951308bffe50c5c57001f12634a193eb5a10930c5f"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Quests.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Quests.json",
+      "sha256": "1fa12f4d5d4842b624e268aad94e70b2b8c32629faed3fbb9c4802d5c5dd6911"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Ruins.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Ruins.json",
+      "sha256": "814e2ba39971fcbd3b38d015f8d931beddda792cbb202744f86e11dcc762de7b"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Specialists.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Specialists.json",
+      "sha256": "741b8bfca3c42837bee68f5d5a9af6a82ed771049243b386884f82af5cfd5d61"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Speeds.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Speeds.json",
+      "sha256": "e0c7a1ab16d307dc930f357205217a4360ac38f45c2f4b5128bf22a0bb1504f3"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Techs.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Techs.json",
+      "sha256": "26a3526f03bfa987540dfe93fde1b706d27b84b850619185697f724b73c63f62"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Terrains.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Terrains.json",
+      "sha256": "77a6b88f16b9a09aebf522c70ce678e75a72fb69494500e75c00338b3af06f5f"
+    },
+    "android/assets/jsons/Civ V - Vanilla/TileImprovements.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/TileImprovements.json",
+      "sha256": "2475fad4eaa897607b1dabbf31656cd08bdec189251810f315359dc9e2ff0f4e"
+    },
+    "android/assets/jsons/Civ V - Vanilla/TileResources.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/TileResources.json",
+      "sha256": "9544d3e58f83b7464c8f9e6764f28fc506e2c77a7ff50dcaf857e9a72ee8a908"
+    },
+    "android/assets/jsons/Civ V - Vanilla/UnitPromotions.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/UnitPromotions.json",
+      "sha256": "9e852164126a02bd19d291c20696d9338e4468a866e74d84db6b5717a2ad3ee5"
+    },
+    "android/assets/jsons/Civ V - Vanilla/UnitTypes.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/UnitTypes.json",
+      "sha256": "765e74e9603145b9673cee7662175fbae20ec82caab9c50c37b070ce0bf4d7a9"
+    },
+    "android/assets/jsons/Civ V - Vanilla/Units.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/Units.json",
+      "sha256": "db4c8de902bf73fc970ca212e61c2b94b5424a89ec0b699f50437edaba993765"
+    },
+    "android/assets/jsons/Civ V - Vanilla/VictoryTypes.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/Civ%20V%20-%20Vanilla/VictoryTypes.json",
+      "sha256": "259a700c2b3cdb54c47a1f6394f8253762be0fab5cc1a4861ca88e00cf6f3c5b"
+    },
+    "android/assets/jsons/translations/Simplified_Chinese.properties": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/android/assets/jsons/translations/Simplified_Chinese.properties",
+      "sha256": "a432a5c361cbdde1e7c93927e8daaea7684ce21464bbb32de3be76a64bf38e59"
+    }
+  },
+  "files": {
+    "rules.json": "45a02ec378258cc98ef813a3b7b0e4c939acba7e5f12c69395096d13b59c54ec",
+    "zh.json": "f1dd1a6ead8b5a72fd87d4cabd90ad0891915f808c5866fef1bd350f20b08951"
+  }
+}

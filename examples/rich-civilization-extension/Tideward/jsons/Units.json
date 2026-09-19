@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Tidewarder",
+    "unitType": "Melee Water",
+    "movement": 4,
+    "strength": 12,
+    "cost": 55,
+    "requiredTech": "Sailing",
+    "obsoleteTech": "Astronomy",
+    "upgradesTo": "Caravel",
+    "uniqueTo": "Tideward",
+    "replaces": "Trireme",
+    "uniques": [
+      "Cannot enter ocean tiles",
+      "[+50]% Strength <vs [Water] units>"
+    ]
+  }
+]

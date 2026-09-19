@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Harbor Exchange",
+    "gold": 2,
+    "specialistSlots": {
+      "Merchant": 1
+    },
+    "percentStatBonus": {
+      "gold": 25
+    },
+    "cost": 100,
+    "maintenance": 1,
+    "requiredTech": "Currency",
+    "uniqueTo": "Tideward",
+    "replaces": "Market",
+    "uniques": [
+      "Provides 1 extra copy of each improved luxury resource near this City"
+    ]
+  }
+]

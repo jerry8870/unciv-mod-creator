@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "mod": "Recipe Lab",
+  "target_game": {
+    "name": "Unciv",
+    "version": "4.22.0",
+    "build": 1297
+  },
+  "base_ruleset": "Civ V - Gods & Kings",
+  "tested_at": "2026-09-19",
+  "runtime_result": "PARTIAL",
+  "static_preflight": {
+    "status": "PASS",
+    "mode": "source-only",
+    "errors": 0,
+    "warnings": 0,
+    "report": "preflight.md"
+  },
+  "artifacts": [
+    {
+      "id": "preflight",
+      "kind": "report",
+      "path": "preflight.md",
+      "sha256": "26553d1ac8baf4c5bec4503804d39f069e74857a0cf1f79ea481605ecb2c21b7"
+    },
+    {
+      "id": "installed-zip",
+      "kind": "package",
+      "path": "evidence/Recipe-Lab.zip",
+      "sha256": "afbd9edaaaf9276b0d4bbad908a495f8a9fa249f8eade934e0760ec1644a7744"
+    },
+    {
+      "id": "installed-content-screen",
+      "kind": "screenshot",
+      "path": "evidence/installed-content.png",
+      "sha256": "0c0e50b59feb1a44acf79ca18b19fcb3ab3408723cf79811ed582cede29bb6eb"
+    },
+    {
+      "id": "ruleset-validator-screen",
+      "kind": "screenshot",
+      "path": "evidence/ruleset-validator.png",
+      "sha256": "193722b6ff2296abd377bc9367023dae6437acd1ad7effe2417cbafe1390ae65"
+    },
+    {
+      "id": "combat-modifier-screen",
+      "kind": "screenshot",
+      "path": "evidence/combat-modifier-detail.png",
+      "sha256": "62f666d87e8418a077bdd95a8a9ea799b386db4026adf8ca6b6ebd480ef5c080"
+    },
+    {
+      "id": "two-cities-screen",
+      "kind": "screenshot",
+      "path": "evidence/two-cities.png",
+      "sha256": "ec2d6107dd631e246d451e58ee7fbeebcff164c660014d880d1c9de5db651d46"
+    },
+    {
+      "id": "runtime-crash-screen",
+      "kind": "screenshot",
+      "path": "evidence/runtime-crash.png",
+      "sha256": "bcdd5c4b14cc8f1040e6f489a7defc485109f95b67be113e3fc3d3bebff1f2b2"
+    },
+    {
+      "id": "optimized-workflow-new-game",
+      "kind": "screenshot",
+      "path": "evidence/optimized-workflow-new-game.png",
+      "sha256": "f9423e18bb404215a35aec3e81baf2cd06a7c605bb2440808d658ab56cfc86be"
+    }
+  ],
+  "checks": [
+    {
+      "id": "receiver-upload",
+      "status": "passed",
+      "observation": "The Receive Mod endpoint returned HTTP 200 with `Mod installed. Return to Unciv.`",
+      "artifacts": [
+        "installed-zip"
+      ]
+    },
+    {
+      "id": "installed-content",
+      "status": "passed",
+      "observation": "Installed Mods displayed 1 Nation, 1 Unit, and 1 Building for Recipe Lab. The later in-game Ruleset Validator screenshot verifies that the updated package containing Recipe Test loaded successfully.",
+      "artifacts": [
+        "installed-content-screen",
+        "ruleset-validator-screen"
+      ]
+    },
+    {
+      "id": "ruleset-validator",
+      "status": "passed",
+      "observation": "Check mod used Civ V - Gods & Kings and displayed a green check with `No problems found.` after the Recipe Test difficulty was added.",
+      "artifacts": [
+        "ruleset-validator-screen"
+      ]
+    },
+    {
+      "id": "runtime-fixture",
+      "status": "passed",
+      "observation": "The Recipe Test difficulty appeared in new-game settings and produced six idle units: two Settlers, one Worker, and three Recipe Guards including the era starting replacement.",
+      "artifacts": []
+    },
+    {
+      "id": "two-city-setup",
+      "status": "passed",
+      "observation": "Beacon Bay and Copper Haven were founded in the same Ancient-era test game.",
+      "artifacts": [
+        "two-cities-screen"
+      ]
+    },
+    {
+      "id": "unit-replacement",
+      "status": "passed",
+      "observation": "Recipe Guard appeared as the starting Warrior replacement and in the city production list.",
+      "artifacts": [
+        "combat-modifier-screen"
+      ]
+    },
+    {
+      "id": "building-replacement",
+      "status": "passed",
+      "observation": "Recipe Hall appeared in the city production flow and was observed completing in Beacon Bay; the retained screenshot establishes its production presence, not the completion notification.",
+      "artifacts": [
+        "two-cities-screen"
+      ]
+    },
+    {
+      "id": "combat-modifier-loaded",
+      "status": "passed",
+      "observation": "The live city production detail for Recipe Guard displayed `+20% Strength`.",
+      "artifacts": [
+        "combat-modifier-screen"
+      ]
+    },
+    {
+      "id": "combat-math",
+      "status": "not-exercised",
+      "observation": "No attack preview was completed, so applied combat damage math remains unverified."
+    },
+    {
+      "id": "trade-route-yield",
+      "status": "not-exercised",
+      "observation": "Two cities were founded, but the road connection was not completed; the +1 Gold city-connection yield remains unverified.",
+      "artifacts": [
+        "two-cities-screen"
+      ]
+    },
+    {
+      "id": "runtime-ui-stability",
+      "status": "failed",
+      "observation": "Unciv raised a recoverable NullPointerException in CityScreenCityPickerTable.update while the city production UI was operated; the app was restarted and the autosave resumed.",
+      "artifacts": [
+        "runtime-crash-screen"
+      ]
+    },
+    {
+      "id": "unified-workflow-regression",
+      "status": "passed",
+      "observation": "On 2026-09-19, the unified upload command produced the same SHA-256-bound package and the receiver returned HTTP 200. The in-game Ruleset Validator reported `No problems found.` for Civ V - Gods & Kings, and a new Recipe Test game loaded with six idle units including Recipe Guard.",
+      "artifacts": [
+        "installed-zip",
+        "optimized-workflow-new-game"
+      ]
+    }
+  ],
+  "evidence_boundary": [
+    "The retained artifacts establish deterministic ZIP installation, official in-game Ruleset Validator acceptance, two-city creation, replacement content availability, and live display of the +20% Strength unique.",
+    "The session record also reports the Recipe Test starting-unit fixture and Recipe Hall completion, but no dedicated screenshot of those two observations was retained.",
+    "It does not establish trade-route yield application, combat damage math, long-run balance, or compatibility with other game versions.",
+    "The captured CityScreenCityPickerTable NullPointerException is an observed Unciv UI failure during test operation; this evidence does not identify the Mod or the test automation as its root cause.",
+    "The 2026-09-19 regression artifact establishes that the optimized unified workflow still reaches a loaded Recipe Test game with the exact previously bound ZIP."
+  ]
+}

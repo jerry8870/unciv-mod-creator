@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "game_version": "4.22.0",
+  "game_build": 1297,
+  "source_commit": "518daddf0a06b273f16b481a0464626889307df7",
+  "reviewed_at": "2026-09-19",
+  "sources": {
+    "docs/Modders/schemas/Beliefs.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Beliefs.schema.json",
+      "sha256": "e1073649adeef8d91d6eb24577278e81534ae8dfbb72ae86d203c8525ed582d4"
+    },
+    "docs/Modders/schemas/Buildings.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Buildings.schema.json",
+      "sha256": "b6fb177f2246ee94175947d4337be1fe4b4dae825f023b923e44c8a65841d0e0"
+    },
+    "docs/Modders/schemas/CityStateTypes.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/CityStateTypes.schema.json",
+      "sha256": "b034421ece6e7c9938aa80dbc387bc4ab366463f7032a0bf1b74a7060b628c73"
+    },
+    "docs/Modders/schemas/Difficulties.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Difficulties.schema.json",
+      "sha256": "90e200511ff40baee0d99e0ad7beb1d4fa96717018eb16278568e90eca9022c5"
+    },
+    "docs/Modders/schemas/Eras.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Eras.schema.json",
+      "sha256": "d48796712c3ddef869cd47869cd0aad12ab39c0c693bbd5ba6128d27a6554bee"
+    },
+    "docs/Modders/schemas/Events.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Events.schema.json",
+      "sha256": "822d9f657bb84e8c83c6568a9b89c1caa79f0f6ebe85dc9c3f210c7a7815cbf3"
+    },
+    "docs/Modders/schemas/GlobalUniques.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/GlobalUniques.schema.json",
+      "sha256": "54fbc11bea15781130206dd4d34c23efccb0f07efe1ebb6bd2e165dd6d1ea6f1"
+    },
+    "docs/Modders/schemas/ModOptions.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/ModOptions.schema.json",
+      "sha256": "a92bb06e3aaf54c335631867033d96b58a68f091b77f8e78f0b30f57b5d0d7eb"
+    },
+    "docs/Modders/schemas/Nations.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Nations.schema.json",
+      "sha256": "89bb3e84b99e71f37f641a1482d29a7063daf96439b0ac7884a04c6b4f48cad8"
+    },
+    "docs/Modders/schemas/Personalities.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Personalities.schema.json",
+      "sha256": "b0aba6f3b545ff8f3bc384d1dc92fe0f34ed5101dd7b49d5a7cd4a11af75dc7f"
+    },
+    "docs/Modders/schemas/Policies.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Policies.schema.json",
+      "sha256": "5e66395a02b1ffc9c95ac367059c32ebdbb36374593917212c8714e6a70eca92"
+    },
+    "docs/Modders/schemas/Quests.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Quests.schema.json",
+      "sha256": "7062504fae1c19e8eaa45a79a4bfff19229f3ffcc3ff2a4b5b0644c0c82e67cd"
+    },
+    "docs/Modders/schemas/Religions.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Religions.schema.json",
+      "sha256": "68e33e333613f21b532aa477ff6590cc4dc4bf90cc78e483fe3632cf8e526a2f"
+    },
+    "docs/Modders/schemas/Ruins.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Ruins.schema.json",
+      "sha256": "bcb2cb4ab116370c223d24a71ee1afef48cd2f5e52b55bdaa4b3f3beadc98f0d"
+    },
+    "docs/Modders/schemas/Specialists.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Specialists.schema.json",
+      "sha256": "0f153b377a19d8e3b56f10cfbab4fc46d824018d774d5ce4f597c2fda4b1ecd4"
+    },
+    "docs/Modders/schemas/Speeds.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Speeds.schema.json",
+      "sha256": "da21603f3c399eea728423bc96f990b08ea0648bd8f5bb8fe6679dd9fd6bfbc7"
+    },
+    "docs/Modders/schemas/Techs.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Techs.schema.json",
+      "sha256": "25b63b8c0b4aba88c2dffc58bdeea03466a742a67bfda7d2dadb55f30389f9ee"
+    },
+    "docs/Modders/schemas/Terrains.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Terrains.schema.json",
+      "sha256": "5e9c918285620b94cb1805c3f9203388340bf66e580848d0c8b3ebc018ff178b"
+    },
+    "docs/Modders/schemas/TileImprovements.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/TileImprovements.schema.json",
+      "sha256": "938d62736d9717a655cf2b152c04e684e5150d50ac8e8d9f4efb897714fc98c3"
+    },
+    "docs/Modders/schemas/TileResources.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/TileResources.schema.json",
+      "sha256": "277fe4ef4619b63000243d4e11a91277b60602f8d7253fb249a37055455f34e6"
+    },
+    "docs/Modders/schemas/UnitNameGroups.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/UnitNameGroups.schema.json",
+      "sha256": "3296bd9203c9c4e2fd36fa36620e42b11487b2737122be73b8b064e9f5e84dc6"
+    },
+    "docs/Modders/schemas/UnitPromotions.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/UnitPromotions.schema.json",
+      "sha256": "3a9ff81ca42e6916d1a2545e915ea6f83bd9b482a350f766e689c35465779d52"
+    },
+    "docs/Modders/schemas/UnitTypes.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/UnitTypes.schema.json",
+      "sha256": "7f895688d01a71c70808caecfd2b15e1a39ea7bc863aabdab7258e4b57c5b3b3"
+    },
+    "docs/Modders/schemas/Units.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Units.schema.json",
+      "sha256": "2822e2b1e1c4d56494562225268d7767ab600e5f8608e01439e24dfdf6fee144"
+    },
+    "docs/Modders/schemas/VictoryTypes.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/VictoryTypes.schema.json",
+      "sha256": "2944aee82aefd59ab496cc7e354659f8f43af3869a7bde07866abf902aa89979"
+    },
+    "docs/Modders/schemas/TileSetConfig.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/TileSetConfig.schema.json",
+      "sha256": "0369c378cab516f908e56a3c9bf894684d5bb8ce3334fca286cc2b94b21a80ed"
+    },
+    "docs/Modders/schemas/Tutorials.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/Tutorials.schema.json",
+      "sha256": "896dd136b0cdfeee4d8f233e4aaf2ced71fb415ff4cb52495c68121b8876a780"
+    },
+    "docs/Modders/schemas/refs/CivilopediaText.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/refs/CivilopediaText.schema.json",
+      "sha256": "40e0eeddcf98461c7b2a189b041967fb6b0a62a9ae56b4a0a414a07166354c0e"
+    },
+    "docs/Modders/schemas/refs/Color.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/refs/Color.schema.json",
+      "sha256": "53010bc3fb409f9d24ebcadd4ac4f1cbbfbba716da3386de8c4d2df1725f4da8"
+    },
+    "docs/Modders/schemas/refs/Priorities.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/refs/Priorities.schema.json",
+      "sha256": "d5f6dba99c6d01453e72032d9c7f6f40ec51d08c025e19c6e7d62d9ac847dd89"
+    },
+    "docs/Modders/schemas/refs/Stats.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/refs/Stats.schema.json",
+      "sha256": "7c5211a8e8c1d4966f008a0df4359e43f62769152c316b76eafb8a942358c682"
+    },
+    "docs/Modders/schemas/refs/Uniques.schema.json": {
+      "url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/schemas/refs/Uniques.schema.json",
+      "sha256": "558cea6c5ec325f509f6981435e48add2d495773de2c463cc5d30ba445caf3f0"
+    }
+  },
+  "files": {
+    "Beliefs.schema.json": "e1073649adeef8d91d6eb24577278e81534ae8dfbb72ae86d203c8525ed582d4",
+    "Buildings.schema.json": "b6fb177f2246ee94175947d4337be1fe4b4dae825f023b923e44c8a65841d0e0",
+    "CityStateTypes.schema.json": "b034421ece6e7c9938aa80dbc387bc4ab366463f7032a0bf1b74a7060b628c73",
+    "Difficulties.schema.json": "90e200511ff40baee0d99e0ad7beb1d4fa96717018eb16278568e90eca9022c5",
+    "Eras.schema.json": "d48796712c3ddef869cd47869cd0aad12ab39c0c693bbd5ba6128d27a6554bee",
+    "Events.schema.json": "822d9f657bb84e8c83c6568a9b89c1caa79f0f6ebe85dc9c3f210c7a7815cbf3",
+    "GlobalUniques.schema.json": "54fbc11bea15781130206dd4d34c23efccb0f07efe1ebb6bd2e165dd6d1ea6f1",
+    "ModOptions.schema.json": "a92bb06e3aaf54c335631867033d96b58a68f091b77f8e78f0b30f57b5d0d7eb",
+    "Nations.schema.json": "89bb3e84b99e71f37f641a1482d29a7063daf96439b0ac7884a04c6b4f48cad8",
+    "Personalities.schema.json": "b0aba6f3b545ff8f3bc384d1dc92fe0f34ed5101dd7b49d5a7cd4a11af75dc7f",
+    "Policies.schema.json": "5e66395a02b1ffc9c95ac367059c32ebdbb36374593917212c8714e6a70eca92",
+    "Quests.schema.json": "7062504fae1c19e8eaa45a79a4bfff19229f3ffcc3ff2a4b5b0644c0c82e67cd",
+    "Religions.schema.json": "68e33e333613f21b532aa477ff6590cc4dc4bf90cc78e483fe3632cf8e526a2f",
+    "Ruins.schema.json": "bcb2cb4ab116370c223d24a71ee1afef48cd2f5e52b55bdaa4b3f3beadc98f0d",
+    "Specialists.schema.json": "0f153b377a19d8e3b56f10cfbab4fc46d824018d774d5ce4f597c2fda4b1ecd4",
+    "Speeds.schema.json": "da21603f3c399eea728423bc96f990b08ea0648bd8f5bb8fe6679dd9fd6bfbc7",
+    "Techs.schema.json": "25b63b8c0b4aba88c2dffc58bdeea03466a742a67bfda7d2dadb55f30389f9ee",
+    "Terrains.schema.json": "5e9c918285620b94cb1805c3f9203388340bf66e580848d0c8b3ebc018ff178b",
+    "TileImprovements.schema.json": "938d62736d9717a655cf2b152c04e684e5150d50ac8e8d9f4efb897714fc98c3",
+    "TileResources.schema.json": "277fe4ef4619b63000243d4e11a91277b60602f8d7253fb249a37055455f34e6",
+    "UnitNameGroups.schema.json": "3296bd9203c9c4e2fd36fa36620e42b11487b2737122be73b8b064e9f5e84dc6",
+    "UnitPromotions.schema.json": "3a9ff81ca42e6916d1a2545e915ea6f83bd9b482a350f766e689c35465779d52",
+    "UnitTypes.schema.json": "7f895688d01a71c70808caecfd2b15e1a39ea7bc863aabdab7258e4b57c5b3b3",
+    "Units.schema.json": "2822e2b1e1c4d56494562225268d7767ab600e5f8608e01439e24dfdf6fee144",
+    "VictoryTypes.schema.json": "2944aee82aefd59ab496cc7e354659f8f43af3869a7bde07866abf902aa89979",
+    "TileSetConfig.schema.json": "0369c378cab516f908e56a3c9bf894684d5bb8ce3334fca286cc2b94b21a80ed",
+    "Tutorials.schema.json": "896dd136b0cdfeee4d8f233e4aaf2ced71fb415ff4cb52495c68121b8876a780",
+    "refs/CivilopediaText.schema.json": "40e0eeddcf98461c7b2a189b041967fb6b0a62a9ae56b4a0a414a07166354c0e",
+    "refs/Color.schema.json": "53010bc3fb409f9d24ebcadd4ac4f1cbbfbba716da3386de8c4d2df1725f4da8",
+    "refs/Priorities.schema.json": "d5f6dba99c6d01453e72032d9c7f6f40ec51d08c025e19c6e7d62d9ac847dd89",
+    "refs/Stats.schema.json": "7c5211a8e8c1d4966f008a0df4359e43f62769152c316b76eafb8a942358c682",
+    "refs/Uniques.schema.json": "558cea6c5ec325f509f6981435e48add2d495773de2c463cc5d30ba445caf3f0"
+  }
+}

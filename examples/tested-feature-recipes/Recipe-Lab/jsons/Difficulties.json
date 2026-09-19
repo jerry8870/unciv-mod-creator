@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Recipe Test",
+    "barbarianSpawnDelay": 0,
+    "turnBarbariansCanEnterPlayerTiles": 0,
+    "playerBonusStartingUnits": [
+      "Settler",
+      "Worker",
+      "Recipe Guard",
+      "Recipe Guard"
+    ]
+  }
+]
