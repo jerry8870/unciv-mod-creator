@@ -249,6 +249,113 @@
       "parameter_references": {
         "technology": "Techs"
       }
+    },
+    {
+      "id": "nation-city-food-pressure",
+      "intent": "Add Food in every city as a survival-pressure proxy",
+      "exact_unique": "[+1 Food] [in all cities]",
+      "applicable_to": [
+        "Global",
+        "Nation",
+        "Building"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "[{stats}] [{city_filter}]",
+      "parameter_kinds": {
+        "stats": "stats",
+        "city_filter": "text"
+      }
+    },
+    {
+      "id": "unit-build-land-improvements",
+      "intent": "Allow a civilian unit to build land improvements",
+      "exact_unique": "Can build [Land] improvements on tiles",
+      "applicable_to": [
+        "Unit"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": []
+    },
+    {
+      "id": "unit-automation-primary-action",
+      "intent": "Allow a unit to use automation as a primary action",
+      "exact_unique": "Automation is a primary action",
+      "applicable_to": [
+        "Unit"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": []
+    },
+    {
+      "id": "improvement-resource-only",
+      "intent": "Limit an improvement to resource tiles",
+      "exact_unique": "Can only be built to improve a resource",
+      "applicable_to": [
+        "Improvement"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": []
+    },
+    {
+      "id": "resource-generation-grassland",
+      "intent": "Generate a resource on a terrain at a fixed frequency",
+      "exact_unique": "Generated on every [14] tiles",
+      "applicable_to": [
+        "Resource"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": []
+    },
+    {
+      "id": "resource-generation-forest",
+      "intent": "Generate a resource on a terrain at a fixed frequency",
+      "exact_unique": "Generated on every [18] tiles",
+      "applicable_to": [
+        "Resource"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": []
+    },
+    {
+      "id": "resource-generation-hill-weight",
+      "intent": "Generate a strategic resource with weighted minor deposits",
+      "exact_unique": "Minor deposits generated with weight [20]",
+      "applicable_to": [
+        "Resource"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": []
+    },
+    {
+      "id": "mod-requires-gods-and-kings",
+      "intent": "Declare the extension base ruleset explicitly",
+      "exact_unique": "Mod requires [Civ V - Gods & Kings]",
+      "applicable_to": [
+        "ModOptions"
+      ],
+      "source_url": "https://raw.githubusercontent.com/yairm210/Unciv/4.22.0/docs/Modders/uniques.md",
+      "source_version": "4.22.0",
+      "evidence_status": "documented",
+      "test_evidence": [],
+      "template_unique": "Mod requires [{mod_filter}]",
+      "parameter_kinds": {
+        "mod_filter": "text"
+      }
     }
   ],
   "template_match_policy": "Only an exact_unique match reports evidence_status. A template_unique match reports untested parameter values until a separate verification record exists."

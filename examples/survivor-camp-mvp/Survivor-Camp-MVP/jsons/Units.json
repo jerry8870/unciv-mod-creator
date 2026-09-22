@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Gatherer",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 50,
+    "requiredTech": "Agriculture",
+    "uniqueTo": "Ember Kin",
+    "uniques": [
+      "Can build [Land] improvements on tiles",
+      "Automation is a primary action"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Gatherers turn nearby food and timber into a stable camp supply."
+      }
+    ]
+  },
+  {
+    "name": "Trailfinder",
+    "unitType": "Scout",
+    "movement": 3,
+    "strength": 5,
+    "cost": 30,
+    "requiredTech": "Agriculture",
+    "obsoleteTech": "Scientific Theory",
+    "uniqueTo": "Ember Kin",
+    "replaces": "Scout",
+    "promotions": [
+      "Ignore terrain cost"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Trailfinders map a safe route between the hearth and the next resource."
+      }
+    ]
+  },
+  {
+    "name": "Camp Guard",
+    "unitType": "Sword",
+    "movement": 2,
+    "strength": 10,
+    "cost": 45,
+    "requiredTech": "Agriculture",
+    "obsoleteTech": "Metal Casting",
+    "upgradesTo": "Swordsman",
+    "requiredResource": "Flint",
+    "uniqueTo": "Ember Kin",
+    "replaces": "Warrior",
+    "promotions": [
+      "Camp Drill"
+    ],
+    "uniques": [
+      "[+20]% Strength"
+    ],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "Camp Guards hold rough ground while the Gatherers bring supplies home."
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Camp Drill",
+    "unitTypes": [
+      "Sword"
+    ],
+    "row": 1,
+    "column": 7,
+    "uniques": [
+      "[+10]% Strength"
+    ],
+    "outerColor": [
+      96,
+      42,
+      28
+    ],
+    "innerColor": [
+      247,
+      191,
+      86
+    ],
+    "civilopediaText": [
+      {
+        "text": "A Camp Guard trained to hold the rough edge of the settlement."
+      }
+    ]
+  }
+]

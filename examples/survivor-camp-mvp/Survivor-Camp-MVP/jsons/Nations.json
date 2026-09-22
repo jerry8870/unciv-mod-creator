@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Ember Kin",
+    "leaderName": "Mara Flint",
+    "outerColor": [116, 48, 35],
+    "innerColor": [245, 186, 82],
+    "uniqueName": "Last Hearth",
+    "uniques": [
+      "[+1 Food] [in all cities]"
+    ],
+    "startBias": [
+      "Fresh Water"
+    ],
+    "preferredVictoryType": "Domination",
+    "introduction": "The Ember Kin carry a small fire through a changed world. Protect the hearth, find the next meal, and keep the path open.",
+    "neutralHello": "Share the fire, and we can share the road.",
+    "tradeRequest": "We can trade what we gathered before the next storm.",
+    "declaringWar": "Your raiders have crossed our marked ground.",
+    "attacked": "The hearth stands. Our scouts are already moving.",
+    "defeated": "The last ember fades, but the trail remains.",
+    "cities": [
+      "Ember Camp",
+      "River Shelter",
+      "Pine Watch",
+      "Stone Hollow",
+      "Ash Meadow",
+      "Redbank"
+    ],
+    "spyNames": [
+      "Nia",
+      "Oren",
+      "Sela",
+      "Tarin"
+    ]
+  }
+]

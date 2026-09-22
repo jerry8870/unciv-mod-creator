@@ -14,6 +14,7 @@ import check_mod
 import create_mod_starter
 import evidence_record
 import package_and_upload_mod
+import query_unciv_data
 import render_verification
 import validate_mod_rules
 
@@ -60,6 +61,16 @@ def build_parser() -> argparse.ArgumentParser:
 
     audit = commands.add_parser("audit", help="audit bundled reference data")
     audit.add_argument("--output", type=Path)
+
+    query = commands.add_parser("query", help="query bundled Civilopedia-style game data")
+    query.add_argument("--base-ruleset", default="Civ V - Gods & Kings")
+    query.add_argument("--type", dest="kind", help="JSON data type, such as Techs or Units")
+    selector = query.add_mutually_exclusive_group()
+    selector.add_argument("--name", help="exact entry name; requires --type")
+    selector.add_argument("--search", help="case-insensitive text search within entries")
+    query.add_argument("--language", choices=("en", "zh"), default="en")
+    query.add_argument("--list-types", action="store_true", help="list available data types and source URLs")
+    query.add_argument("--json", action="store_true", dest="as_json", help="emit machine-readable JSON")
 
     evidence = commands.add_parser("evidence", help="create and update runtime evidence")
     evidence_sub = evidence.add_subparsers(dest="evidence_command", required=True)
@@ -140,6 +151,16 @@ def main() -> int:
                 args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             print(f"{result['status']}: {len(result['errors'])} error(s)")
             return 1 if result["errors"] else 0
+        if args.command == "query":
+            return query_unciv_data.run_cli(
+                base_ruleset=args.base_ruleset,
+                kind=args.kind,
+                name=args.name,
+                search=args.search,
+                language=args.language,
+                show_types=args.list_types,
+                as_json=args.as_json,
+            )
         if args.evidence_command == "init":
             evidence_record.init_record(args.mod, args.base_ruleset, args.preflight, args.archive, args.output)
             print(f"Created evidence record: {args.output.resolve()}")

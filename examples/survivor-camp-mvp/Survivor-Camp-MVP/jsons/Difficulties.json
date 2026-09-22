@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Survival Pressure",
+    "baseHappiness": 8,
+    "extraHappinessPerLuxury": 0,
+    "researchCostModifier": 1,
+    "unitCostModifier": 1,
+    "unitSupplyBase": 5,
+    "unitSupplyPerCity": 2,
+    "buildingCostModifier": 1,
+    "policyCostModifier": 1,
+    "unhappinessModifier": 1,
+    "barbarianBonus": 0.25,
+    "barbarianSpawnDelay": 1,
+    "playerBonusStartingUnits": [
+      "Gatherer",
+      "Trailfinder",
+      "Camp Guard"
+    ],
+    "aiDifficultyLevel": "Chieftain",
+    "aiCityGrowthModifier": 1,
+    "aiUnitCostModifier": 1,
+    "aiBuildingCostModifier": 1,
+    "aiWonderCostModifier": 1,
+    "aiBuildingMaintenanceModifier": 1,
+    "aiUnitMaintenanceModifier": 1,
+    "aiUnitSupplyModifier": 0,
+    "aiUnhappinessModifier": 1,
+    "aisExchangeTechs": false,
+    "turnBarbariansCanEnterPlayerTiles": 5,
+    "clearBarbarianCampReward": 15
+  }
+]

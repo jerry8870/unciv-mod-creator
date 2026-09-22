@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Forage Camp",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Forest"
+    ],
+    "turnsToBuild": 4,
+    "techRequired": "Agriculture",
+    "food": 1,
+    "uniques": [
+      "Can only be built to improve a resource"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A small, marked harvesting site for Wild Berries."
+      }
+    ]
+  },
+  {
+    "name": "Lumber Camp",
+    "terrainsCanBeBuiltOn": [
+      "Forest"
+    ],
+    "turnsToBuild": 4,
+    "techRequired": "Agriculture",
+    "production": 1,
+    "uniques": [
+      "Can only be built to improve a resource"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A managed grove that turns Timber into camp production."
+      }
+    ]
+  },
+  {
+    "name": "Flint Quarry",
+    "terrainsCanBeBuiltOn": [
+      "Hill",
+      "Plains",
+      "Grassland"
+    ],
+    "turnsToBuild": 5,
+    "techRequired": "Mining",
+    "production": 1,
+    "uniques": [
+      "Can only be built to improve a resource"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A shallow quarry that exposes the Flint needed by Camp Guards."
+      }
+    ]
+  }
+]

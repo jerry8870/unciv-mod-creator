@@ -16,6 +16,7 @@ A vendor-neutral Agent Skill for designing, creating, validating, packaging, ins
 | Produce one preflight report | Combines rules, translations, assets, atlases, and ZIP integrity into a Markdown or JSON report with selected validation inputs and a SHA-256 for the temporary deterministic package. |
 | Package and deliver a Mod | Creates a reproducible ZIP with stable timestamps, ordering, permissions, and metadata filtering. It can stop after packaging or upload the new archive to Unciv's iOS Receive Mod endpoint. |
 | Record runtime verification | Guides the in-game Ruleset Validator, new-game smoke tests, and feature-specific checks. Results can be stored in `verification.json`, bound to reports, ZIPs, and screenshots by SHA-256, then rendered as Markdown. |
+| Query the built-in encyclopedia data | Searches bundled ruleset snapshots by category, exact name, or text; returns Simplified Chinese translations when available and the direct upstream source URL for each JSON category. |
 | Maintain the reference bundle | Audits official Schema files, base rulesets, manifests, checksums, and reviewed exceptions. The repository includes automated tests and cross-platform CI. |
 | Automate the full workflow | Provides one `unciv_mod.py` entry point for starter creation, preflight, packaging, upload, reference audit, report rendering, and evidence recording while keeping the focused scripts available. |
 
@@ -67,11 +68,12 @@ The command detects the base ruleset only when the Mod contains a reference that
 ## Unified Command
 
 ```text
-python3 scripts/unciv_mod.py {create,check,pack,upload,verify,audit,evidence} ...
+python3 scripts/unciv_mod.py {create,check,query,pack,upload,verify,audit,evidence} ...
 ```
 
 - `create` creates a non-overwriting starter.
 - `check` selects or detects a base ruleset and writes a strict Markdown or JSON preflight.
+- `query` searches the bundled Civilopedia-style data and prints the matching local record and upstream source URL.
 - `pack` creates a deterministic ZIP; `upload` creates the ZIP and sends it to the iOS receiver.
 - `verify` validates artifact hashes and renders a verification report.
 - `audit` checks the bundled reference manifests, Schemas, baselines, and reviewed exceptions.
@@ -145,6 +147,33 @@ python3 scripts/unciv_mod.py check /absolute/path/to/My-Mod \
 ```
 
 JSON reports provide stable diagnostic `code` values. Findings can also include `json_pointer`, `value`, and a concrete `suggestion`, which makes editor, CI, and other tool integrations deterministic.
+
+### Query encyclopedia data
+
+The bundled snapshots cover the rules JSON behind the game's Civilopedia-style
+categories, including technologies, units, buildings, promotions, policies,
+resources, terrain, difficulties, victory types, unit names, and more. The
+command works offline and includes a direct upstream source link in its output:
+
+```bash
+python3 scripts/unciv_mod.py query \
+  --base-ruleset "Civ V - Gods & Kings" \
+  --type Techs \
+  --name Agriculture
+
+python3 scripts/unciv_mod.py query \
+  --base-ruleset "Civ V - Gods & Kings" \
+  --type Units \
+  --search "barbarian" \
+  --language zh \
+  --json
+```
+
+Use `--list-types` to see all available categories and their source links. See
+[references/encyclopedia.md](references/encyclopedia.md) for the category map
+and the boundary between bundled rules data and source-only tutorial or UI
+pages. The printed reference version is provenance metadata; users do not need
+to select a game version.
 
 ### Validate and pack artwork
 
@@ -220,6 +249,7 @@ The machine-readable validation surface is declared in [references/validation_co
 
 - [SKILL.md](SKILL.md): the complete Agent workflow and evidence rules.
 - [references/knowledge-index.md](references/knowledge-index.md): entry point for versioned references and authoring guidance.
+- [references/encyclopedia.md](references/encyclopedia.md): Civilopedia category map, query examples, source links, and data/runtime boundaries.
 - [references/versions/index.json](references/versions/index.json): bundled reference provenance and base-ruleset catalog.
 - [references/mechanics_registry.json](references/mechanics_registry.json): reviewed Unique examples, templates, applicability, and test evidence.
 - [scripts/unciv_mod.py](scripts/unciv_mod.py): unified workflow command.
@@ -228,3 +258,4 @@ The machine-readable validation surface is declared in [references/validation_co
 - [examples/minimal-civilization-extension/](examples/minimal-civilization-extension/): simulator-tested minimal civilization.
 - [examples/rich-civilization-extension/](examples/rich-civilization-extension/): richer static example with a Nation, unit, and building.
 - [examples/tested-feature-recipes/](examples/tested-feature-recipes/): evidence-bound simulator recipe with passed, failed, and unexercised checks.
+- [examples/survivor-camp-mvp/](examples/survivor-camp-mvp/): bilingual, installable turn-based survival example with a mechanism matrix and partial simulator evidence.

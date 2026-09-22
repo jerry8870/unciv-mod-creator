@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-19T10:38:28+00:00",
+  "mod": "/Users/ai/code/unciv-mod-creator/examples/survivor-camp-mvp/Survivor-Camp-MVP",
+  "mode": "full",
+  "ruleset_selection": {
+    "source": "explicit",
+    "status": "selected",
+    "ruleset": "Civ V - Gods & Kings"
+  },
+  "validation_inputs": {
+    "base_rules_data": "references/snapshots/gk-baseline/rules.json",
+    "mechanics_registry": {
+      "path": "references/mechanics_registry.json",
+      "game_version": "4.22.0"
+    },
+    "schema_bundle": {
+      "path": "references/schemas/unciv-4.22.0",
+      "game_version": "4.22.0",
+      "source_commit": "518daddf0a06b273f16b481a0464626889307df7"
+    },
+    "schema_exceptions": "references/schema_exceptions.json",
+    "reference_bundle": {
+      "reference_version": "4.22.0",
+      "reference_build": 1297,
+      "base_ruleset": "Civ V - Gods & Kings",
+      "index": "references/versions/index.json"
+    }
+  },
+  "status": "PASS",
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "checks": {
+    "rules": [
+      {
+        "severity": "INFO",
+        "code": "SCHEMA_VALIDATION_PASS",
+        "path": "jsons/Buildings.json",
+        "message": "Passed official Unciv 4.22.0 Buildings.schema.json"
+      },
+      {
+        "severity": "INFO",
+        "code": "SCHEMA_VALIDATION_PASS",
+        "path": "jsons/Difficulties.json",
+        "message": "Passed official Unciv 4.22.0 Difficulties.schema.json"
+      },
+      {
+        "severity": "INFO",
+        "code": "SCHEMA_VALIDATION_PASS",
+        "path": "jsons/ModOptions.json",
+        "message": "Passed official Unciv 4.22.0 ModOptions.schema.json"
+      },
+      {
+        "severity": "INFO",
+        "code": "SCHEMA_VALIDATION_PASS",
+        "path": "jsons/Nations.json",
+        "message": "Passed official Unciv 4.22.0 Nations.schema.json"
+      },
+      {
+        "severity": "INFO",
+        "code": "SCHEMA_VALIDATION_PASS",
+        "path": "jsons/Techs.json",
+        "message": "Passed official Unciv 4.22.0 Techs.schema.json"
+      },
+      {
+        "severity": "INFO",
+        "code": "SCHEMA_VALIDATION_PASS",
+        "path": "jsons/TileImprovements.json",
+        "message": "Passed official Unciv 4.22.0 TileImprovements.schema.json"
+      },
+      {
+        "severity": "INFO",
+        "code": "SCHEMA_VALIDATION_PASS",
+        "path": "jsons/TileResources.json",
+        "message": "Passed official Unciv 4.22.0 TileResources.schema.json"
+      },
+      {
+        "severity": "INFO",
+        "code": "SCHEMA_VALIDATION_PASS",
+        "path": "jsons/UnitPromotions.json",
+        "message": "Passed official Unciv 4.22.0 UnitPromotions.schema.json"
+      },
+      {
+        "severity": "INFO",
+        "code": "SCHEMA_VALIDATION_PASS",
+        "path": "jsons/Units.json",
+        "message": "Passed official Unciv 4.22.0 Units.schema.json"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/ModOptions.json",
+        "message": "uniques[0] matches mechanic 'mod-requires-gods-and-kings' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/Nations.json",
+        "message": "[0].uniques[0] matches mechanic 'nation-city-food-pressure' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/TileImprovements.json",
+        "message": "[0].uniques[0] matches mechanic 'improvement-resource-only' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/TileImprovements.json",
+        "message": "[1].uniques[0] matches mechanic 'improvement-resource-only' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/TileImprovements.json",
+        "message": "[2].uniques[0] matches mechanic 'improvement-resource-only' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/TileResources.json",
+        "message": "[0].uniques[0] matches mechanic 'resource-generation-grassland' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/TileResources.json",
+        "message": "[1].uniques[0] matches mechanic 'resource-generation-forest' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/TileResources.json",
+        "message": "[2].uniques[0] matches mechanic 'resource-generation-hill-weight' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_PARAMETERIZED_MATCH",
+        "path": "jsons/UnitPromotions.json",
+        "message": "[0].uniques[0] matches parameterized mechanic 'unit-strength-percent'; exact parameter values have no recorded test evidence"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/Units.json",
+        "message": "[0].uniques[0] matches mechanic 'unit-build-land-improvements' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/Units.json",
+        "message": "[0].uniques[1] matches mechanic 'unit-automation-primary-action' (documented)"
+      },
+      {
+        "severity": "INFO",
+        "code": "UNIQUE_EXACT_MATCH",
+        "path": "jsons/Units.json",
+        "message": "[2].uniques[0] matches mechanic 'unit-strength-percent' (ruleset-validator-passed)"
+      }
+    ],
+    "assets": [],
+    "packaging": {
+      "status": "PASS",
+      "code": "PACKAGE_INTEGRITY_PASS",
+      "message": "Created and integrity-checked a temporary ZIP with 35 member(s)",
+      "sha256": "54f4fa02c6f2e3925922ddbb0b12463227d4cebc20e0be2618288564d3cfe8d5"
+    }
+  },
+  "evidence_boundary": "This report covers bundled official Schema, cross-file reference, registered-mechanic, translation, asset, atlas, and ZIP checks. It does not prove gameplay behavior, balance, or compatibility with an untested game build."
+}

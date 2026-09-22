@@ -10,6 +10,13 @@ The bundled snapshots are [snapshots/gk-baseline/](snapshots/gk-baseline/) for *
 - `zh.json` contains Simplified Chinese strings for this ruleset.
 - `manifest.json` records the pinned game version, build, source commit, and checksums.
 
+For Civilopedia-style lookups, use [encyclopedia.md](encyclopedia.md) and
+`python3 scripts/unciv_mod.py query`. It maps the in-game concepts shown in the
+encyclopedia to bundled JSON categories, returns Simplified Chinese translations
+when available, and exposes each category's direct upstream source URL. Tutorial
+and other presentation pages that are not standalone rules records are marked as
+source-only there.
+
 This is complete for the rules JSON files in the pinned upstream directory, but it is still reference data rather than runtime proof. The matching official Schema bundle is in [schemas/unciv-4.22.0/](schemas/unciv-4.22.0/). When a requested feature depends on engine behavior, test it in the target game before claiming support.
 
 ## Choose a reference

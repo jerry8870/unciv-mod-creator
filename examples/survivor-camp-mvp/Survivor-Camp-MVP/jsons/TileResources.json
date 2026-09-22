@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Wild Berries",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Forest"
+    ],
+    "food": 1,
+    "improvement": "Forage Camp",
+    "improvementStats": {
+      "food": 1
+    },
+    "uniques": [
+      "Generated on every [14] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A reliable food source when the camp can keep a path open to it."
+      }
+    ]
+  },
+  {
+    "name": "Timber",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Forest"
+    ],
+    "production": 1,
+    "improvement": "Lumber Camp",
+    "improvementStats": {
+      "production": 1
+    },
+    "uniques": [
+      "Generated on every [18] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dry timber feeds the fire and keeps the Workbench active."
+      }
+    ]
+  },
+  {
+    "name": "Flint",
+    "resourceType": "Strategic",
+    "revealedBy": "Mining",
+    "terrainsCanBeFoundOn": [
+      "Hill",
+      "Plains",
+      "Grassland"
+    ],
+    "production": 1,
+    "improvement": "Flint Quarry",
+    "improvementStats": {
+      "production": 1
+    },
+    "majorDepositAmount": {
+      "sparse": 2,
+      "default": 3,
+      "abundant": 4
+    },
+    "minorDepositAmount": {
+      "sparse": 1,
+      "default": 1,
+      "abundant": 2
+    },
+    "uniques": [
+      "Minor deposits generated with weight [20]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flint is the camp's limited crafting and combat resource."
+      }
+    ]
+  }
+]

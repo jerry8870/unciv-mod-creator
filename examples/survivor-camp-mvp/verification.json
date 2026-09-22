@@ -1,0 +1,152 @@
+{
+  "schema_version": 3,
+  "mod": "Survivor Camp MVP",
+  "test_environment": {
+    "name": "Unciv",
+    "version": "4.22.0",
+    "build": 1297,
+    "device": "iPhone 17 Pro Max simulator",
+    "os": "iOS 26.5"
+  },
+  "base_ruleset": "Civ V - Gods & Kings",
+  "tested_at": "2026-09-19",
+  "runtime_result": "PARTIAL",
+  "static_preflight": {
+    "status": "PASS",
+    "mode": "full",
+    "errors": 0,
+    "warnings": 0,
+    "report": "preflight-full.json"
+  },
+  "artifacts": [
+    {
+      "id": "preflight",
+      "kind": "report",
+      "path": "preflight-full.json",
+      "sha256": "ba9687d26417efead102836bf8fbb6a9008e1fa673383979f4f8406cb5654b10"
+    },
+    {
+      "id": "installed-zip",
+      "kind": "package",
+      "path": "evidence/Survivor-Camp-MVP-upload.zip",
+      "sha256": "54f4fa02c6f2e3925922ddbb0b12463227d4cebc20e0be2618288564d3cfe8d5"
+    },
+    {
+      "id": "simulator-test-notes",
+      "kind": "runtime-log",
+      "path": "evidence/simulator-test-notes.md",
+      "sha256": "1b0a2e5653fa9cf3d0c8e0942d3e20b0be1548dd24ffcc9839ab5262250ee3ff"
+    }
+  ],
+  "checks": [
+    {
+      "id": "receiver-upload",
+      "status": "passed",
+      "observation": "The Receive Mod endpoint returned HTTP 200 and reported Mod installed.",
+      "artifacts": [
+        "installed-zip",
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "installed-content",
+      "status": "passed",
+      "observation": "Installed Mods displayed 2 Techs, 1 Nation, 3 Units, 3 Buildings, 3 Resources, and 3 Improvements.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "ruleset-validator",
+      "status": "passed",
+      "observation": "The in-game Ruleset Validator displayed a green check and No problems found.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "extension-selection",
+      "status": "passed",
+      "observation": "Selecting Survivor Camp MVP exposed Ember Kin in the civilization picker.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "runtime-fixture",
+      "status": "passed",
+      "observation": "A new generated Pangaea game with Survival Pressure loaded Ember Kin and showed the Settler, Gatherer, Trailfinder, and Camp Guard entries; the opening turn reported five idle units.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "city-food-growth",
+      "status": "passed",
+      "observation": "Founding Ember Camp exposed the tech and construction prompts. The city Stats screen showed Food 5, Happiness -4, four turns to new population, and seven turns to expansion.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "tech-unlock",
+      "status": "passed",
+      "observation": "Selecting Campcraft displayed the Campfire plus 2 Food plus 1 Happiness and Workbench plus 2 Production unlock descriptions, and research was started.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "resource-improvement",
+      "status": "not-exercised",
+      "observation": "No generated Wild Berries, Timber, or Flint tile was improved during this run.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "production-completion",
+      "status": "not-exercised",
+      "observation": "Campfire, Workbench, Watchtower, and Camp Guard production were not completed during this run.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "combat",
+      "status": "not-exercised",
+      "observation": "No barbarian encounter or attack was completed, so combat results remain unverified.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "barbarian-pressure",
+      "status": "not-exercised",
+      "observation": "The first barbarian appearance turn and custom barbarian spawn-pool membership were not observed.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "environment-hazard",
+      "status": "not-exercised",
+      "observation": "No environment damage effect was implemented or exercised in this MVP.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    },
+    {
+      "id": "survival-boundaries",
+      "status": "not-exercised",
+      "observation": "Independent unit hunger, real-time day/night, inventory recipes, forced single-city play, and permanent death were not exercised and are outside the MVP.",
+      "artifacts": [
+        "simulator-test-notes"
+      ]
+    }
+  ],
+  "evidence_boundary": [
+    "The bound artifacts identify the exact static preflight and install package used by this record.",
+    "Only checks with recorded observations count as runtime evidence; unrecorded behavior remains unverified."
+  ]
+}

@@ -17,6 +17,19 @@ Square brackets are part of the unique syntax: keep them and replace their conte
 | Improve production of a unit class | `[+20]% Production when constructing [Melee] units [in all cities]` | Global, FollowerBelief | [Global uniques](https://yairm210.github.io/Unciv/Modders/uniques/#global-uniques) |
 | Provide a resource | `Provides [3] [Iron]` | Global, FollowerBelief, Improvement | [Global uniques](https://yairm210.github.io/Unciv/Modders/uniques/#global-uniques) |
 
+## Data-layer survival
+
+| Player intent | Documented pattern | Applicable to | Evidence boundary |
+|---|---|---|---|
+| Express camp food pressure | `[+1 Food] [in all cities]` plus building/resource Food fields | Global, Nation, Building | City-level proxy; it is not per-unit hunger |
+| Let a civilian gather resources | `Can build [Land] improvements on tiles` | Unit | Improvement access must be tested on a generated resource |
+| Restrict resource improvements | `Can only be built to improve a resource` | Improvement | Does not create an inventory or crafting screen |
+| Generate a custom bonus resource | `Generated on every [14] tiles` plus `terrainsCanBeFoundOn` | Resource | Placement is random unless a saved map fixture is used |
+| Generate a weighted strategic resource | `Minor deposits generated with weight [20]` plus `terrainsCanBeFoundOn` | Resource | Availability and consumption need a runtime check |
+| Start barbarian pressure earlier | `barbarianSpawnDelay`, `barbarianBonus`, and `turnBarbariansCanEnterPlayerTiles` | Difficulty | These settings do not guarantee a custom barbarian spawn pool |
+
+These patterns can approximate gathering, shelter, supply, and enemy pressure with existing data. They do not add real-time day/night, independent unit hunger, an inventory UI, a forced single-city rule, or permanent death.
+
 ## Military and exploration
 
 | Player intent | Documented pattern | Applicable to | Evidence |

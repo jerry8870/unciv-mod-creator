@@ -16,6 +16,7 @@
 | 生成统一预检报告 | 把规则、翻译、图片、图集和 ZIP 完整性检查汇总为 Markdown 或 JSON 报告，记录实际校验输入以及临时确定性包的 SHA-256。 |
 | 打包和交付 Mod | 通过固定时间戳、排序、权限和元数据过滤生成可复现 ZIP；既可以只打包，也可以把新归档上传到 Unciv iOS 的 Receive Mod 接收器。 |
 | 记录运行时验证 | 指导执行游戏内 Ruleset Validator、新游戏冒烟测试和功能专项检查；结果可以写入 `verification.json`，用 SHA-256 绑定报告、ZIP 和截图，再渲染为 Markdown。 |
+| 查询内置百科数据 | 按类别、精确名称或文本搜索内置规则集快照；如果有对应翻译则返回简体中文，并显示该 JSON 类别的官方源码链接。 |
 | 维护参考数据 | 审计官方 Schema、基础规则集、清单、校验和及已审核例外；仓库还提供自动测试和跨平台 CI。 |
 | 自动化完整流程 | 提供统一的 `unciv_mod.py` 入口，覆盖起始结构、预检、打包、上传、参考数据审计、报告渲染和证据记录，同时保留各个单用途脚本。 |
 
@@ -67,11 +68,12 @@ python3 scripts/unciv_mod.py check /absolute/path/to/My-Mod \
 ## 统一命令
 
 ```text
-python3 scripts/unciv_mod.py {create,check,pack,upload,verify,audit,evidence} ...
+python3 scripts/unciv_mod.py {create,check,query,pack,upload,verify,audit,evidence} ...
 ```
 
 - `create` 创建不覆盖已有目录的起始结构。
 - `check` 选择或识别基础规则集，生成严格的 Markdown 或 JSON 预检报告。
+- `query` 查询内置百科风格的数据，并输出匹配的本地记录和官方源码 URL。
 - `pack` 生成确定性 ZIP；`upload` 生成 ZIP 并发送到 iOS 接收器。
 - `verify` 校验产物哈希并渲染验证报告。
 - `audit` 审计内置参考清单、Schema、基础规则和已审核例外。
@@ -145,6 +147,31 @@ python3 scripts/unciv_mod.py check /absolute/path/to/My-Mod \
 ```
 
 JSON 报告提供稳定的诊断 `code`。问题还可以包含 `json_pointer`、`value` 和具体 `suggestion`，便于编辑器、CI 和其他工具进行确定性集成。
+
+### 查询百科数据
+
+内置快照覆盖游戏百科背后的规则 JSON，包括科技、单位、建筑、晋升、政策、
+资源、地形、难度、胜利方式、单位名称等类别。查询可以离线执行，结果会带有
+对应类别的官方源码链接：
+
+```bash
+python3 scripts/unciv_mod.py query \
+  --base-ruleset "Civ V - Gods & Kings" \
+  --type Techs \
+  --name Agriculture
+
+python3 scripts/unciv_mod.py query \
+  --base-ruleset "Civ V - Gods & Kings" \
+  --type Units \
+  --search "barbarian" \
+  --language zh \
+  --json
+```
+
+使用 `--list-types` 可以查看全部类别和源码链接。类别映射、查询方式以及内置规则
+数据与仅源码的教程或界面页面之间的边界，见
+[references/encyclopedia.md](references/encyclopedia.md)。结果中的参考版本只是来源
+元数据，用户不需要选择游戏版本。
 
 ### 校验并打包图片
 
@@ -220,6 +247,7 @@ python3 -m unittest discover -s tests -v
 
 - [SKILL.md](SKILL.md)：完整 Agent 工作流和证据规则。
 - [references/knowledge-index.md](references/knowledge-index.md)：版本化参考资料和制作指南入口。
+- [references/encyclopedia.md](references/encyclopedia.md)：百科类别映射、查询示例、源码链接以及数据/运行时边界。
 - [references/versions/index.json](references/versions/index.json)：内置参考数据来源和基础规则集目录。
 - [references/mechanics_registry.json](references/mechanics_registry.json)：已审核的 Unique 示例、模板、适用范围和测试证据。
 - [scripts/unciv_mod.py](scripts/unciv_mod.py)：统一工作流命令。
@@ -228,3 +256,4 @@ python3 -m unittest discover -s tests -v
 - [examples/minimal-civilization-extension/](examples/minimal-civilization-extension/)：经过模拟器测试的最小文明示例。
 - [examples/rich-civilization-extension/](examples/rich-civilization-extension/)：包含文明、单位和建筑的较完整静态示例。
 - [examples/tested-feature-recipes/](examples/tested-feature-recipes/)：包含通过、失败和未执行检查的证据绑定模拟器示例。
+- [examples/survivor-camp-mvp/](examples/survivor-camp-mvp/)：双语、可安装的回合制生存示例，包含机制矩阵和部分模拟器证据。

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Campfire",
+    "food": 2,
+    "happiness": 1,
+    "cost": 40,
+    "maintenance": 0,
+    "requiredTech": "Campcraft",
+    "uniqueTo": "Ember Kin",
+    "civilopediaText": [
+      {
+        "text": "A maintained fire turns a temporary stop into a dependable primary camp."
+      }
+    ]
+  },
+  {
+    "name": "Workbench",
+    "production": 2,
+    "cost": 50,
+    "maintenance": 1,
+    "requiredTech": "Campcraft",
+    "requiredBuilding": "Campfire",
+    "uniqueTo": "Ember Kin",
+    "civilopediaText": [
+      {
+        "text": "The Workbench converts gathered timber into tools, repairs, and trained defenders."
+      }
+    ]
+  },
+  {
+    "name": "Watchtower",
+    "cityStrength": 4,
+    "cost": 70,
+    "maintenance": 1,
+    "requiredTech": "Shelter Engineering",
+    "requiredBuilding": "Campfire",
+    "uniqueTo": "Ember Kin",
+    "civilopediaText": [
+      {
+        "text": "A Watchtower extends the camp's warning line and gives its city a defensive edge."
+      }
+    ]
+  }
+]

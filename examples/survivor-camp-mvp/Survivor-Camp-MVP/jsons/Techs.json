@@ -1,0 +1,43 @@
+[
+  {
+    "columnNumber": 2,
+    "era": "Ancient era",
+    "techs": [
+      {
+        "name": "Campcraft",
+        "row": 11,
+        "cost": 70,
+        "prerequisites": [
+          "Agriculture"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Campcraft turns gathered food and timber into a stable hearth."
+          }
+        ],
+        "quote": "A shelter is a promise that the next morning can be planned."
+      }
+    ]
+  },
+  {
+    "columnNumber": 3,
+    "era": "Classical era",
+    "techs": [
+      {
+        "name": "Shelter Engineering",
+        "row": 11,
+        "cost": 100,
+        "prerequisites": [
+          "Campcraft",
+          "Mining"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Shelter Engineering strengthens the camp against raids and bad ground."
+          }
+        ],
+        "quote": "A high post buys time for the fire below."
+      }
+    ]
+  }
+]
